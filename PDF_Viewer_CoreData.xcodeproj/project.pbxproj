@@ -16,6 +16,13 @@
 		975D8D782A97B32900FAF8BF /* PDF_Viewer_CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975D8D772A97B32900FAF8BF /* PDF_Viewer_CoreDataTests.swift */; };
 		975D8D822A97B32A00FAF8BF /* PDF_Viewer_CoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975D8D812A97B32A00FAF8BF /* PDF_Viewer_CoreDataUITests.swift */; };
 		975D8D842A97B32A00FAF8BF /* PDF_Viewer_CoreDataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975D8D832A97B32A00FAF8BF /* PDF_Viewer_CoreDataUITestsLaunchTests.swift */; };
+		975D8D922A97B3E300FAF8BF /* Book+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975D8D902A97B3E300FAF8BF /* Book+CoreDataClass.swift */; };
+		975D8D932A97B3E300FAF8BF /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975D8D912A97B3E300FAF8BF /* Book+CoreDataProperties.swift */; };
+		975D8D972A97B42E00FAF8BF /* data2vec.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 975D8D962A97B42E00FAF8BF /* data2vec.pdf */; };
+		975D8D9E2A97B60C00FAF8BF /* DocumentPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975D8D9A2A97B60C00FAF8BF /* DocumentPickerView.swift */; };
+		975D8D9F2A97B60C00FAF8BF /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975D8D9B2A97B60C00FAF8BF /* BrowseView.swift */; };
+		975D8DA12A97B60C00FAF8BF /* CoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975D8D9D2A97B60C00FAF8BF /* CoverView.swift */; };
+		975D8DA32A97B61600FAF8BF /* Bookshelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975D8DA22A97B61600FAF8BF /* Bookshelf.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,13 @@
 		975D8D7D2A97B32A00FAF8BF /* PDF_Viewer_CoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDF_Viewer_CoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		975D8D812A97B32A00FAF8BF /* PDF_Viewer_CoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF_Viewer_CoreDataUITests.swift; sourceTree = "<group>"; };
 		975D8D832A97B32A00FAF8BF /* PDF_Viewer_CoreDataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF_Viewer_CoreDataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		975D8D902A97B3E300FAF8BF /* Book+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataClass.swift"; sourceTree = "<group>"; };
+		975D8D912A97B3E300FAF8BF /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		975D8D962A97B42E00FAF8BF /* data2vec.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = data2vec.pdf; sourceTree = "<group>"; };
+		975D8D9A2A97B60C00FAF8BF /* DocumentPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentPickerView.swift; sourceTree = "<group>"; };
+		975D8D9B2A97B60C00FAF8BF /* BrowseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		975D8D9D2A97B60C00FAF8BF /* CoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverView.swift; sourceTree = "<group>"; };
+		975D8DA22A97B61600FAF8BF /* Bookshelf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bookshelf.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +92,8 @@
 		975D8D552A97B32600FAF8BF = {
 			isa = PBXGroup;
 			children = (
+				975D8D902A97B3E300FAF8BF /* Book+CoreDataClass.swift */,
+				975D8D912A97B3E300FAF8BF /* Book+CoreDataProperties.swift */,
 				975D8D602A97B32700FAF8BF /* PDF_Viewer_CoreData */,
 				975D8D762A97B32900FAF8BF /* PDF_Viewer_CoreDataTests */,
 				975D8D802A97B32A00FAF8BF /* PDF_Viewer_CoreDataUITests */,
@@ -98,8 +114,10 @@
 		975D8D602A97B32700FAF8BF /* PDF_Viewer_CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				975D8D962A97B42E00FAF8BF /* data2vec.pdf */,
+				975D8D952A97B41A00FAF8BF /* Views */,
+				975D8D942A97B40E00FAF8BF /* Models */,
 				975D8D612A97B32700FAF8BF /* PDF_Viewer_CoreDataApp.swift */,
-				975D8D632A97B32700FAF8BF /* ContentView.swift */,
 				975D8D652A97B32900FAF8BF /* Assets.xcassets */,
 				975D8D6A2A97B32900FAF8BF /* Persistence.swift */,
 				975D8D6C2A97B32900FAF8BF /* PDF_Viewer_CoreData.xcdatamodeld */,
@@ -131,6 +149,41 @@
 				975D8D832A97B32A00FAF8BF /* PDF_Viewer_CoreDataUITestsLaunchTests.swift */,
 			);
 			path = PDF_Viewer_CoreDataUITests;
+			sourceTree = "<group>";
+		};
+		975D8D942A97B40E00FAF8BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		975D8D952A97B41A00FAF8BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				975D8D992A97B44400FAF8BF /* Screens */,
+				975D8D982A97B43A00FAF8BF /* Subviews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		975D8D982A97B43A00FAF8BF /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				975D8D9B2A97B60C00FAF8BF /* BrowseView.swift */,
+				975D8D9D2A97B60C00FAF8BF /* CoverView.swift */,
+				975D8D9A2A97B60C00FAF8BF /* DocumentPickerView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		975D8D992A97B44400FAF8BF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				975D8DA22A97B61600FAF8BF /* Bookshelf.swift */,
+				975D8D632A97B32700FAF8BF /* ContentView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +292,7 @@
 			files = (
 				975D8D692A97B32900FAF8BF /* Preview Assets.xcassets in Resources */,
 				975D8D662A97B32900FAF8BF /* Assets.xcassets in Resources */,
+				975D8D972A97B42E00FAF8BF /* data2vec.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,8 +317,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				975D8D9F2A97B60C00FAF8BF /* BrowseView.swift in Sources */,
+				975D8D922A97B3E300FAF8BF /* Book+CoreDataClass.swift in Sources */,
 				975D8D6B2A97B32900FAF8BF /* Persistence.swift in Sources */,
+				975D8D932A97B3E300FAF8BF /* Book+CoreDataProperties.swift in Sources */,
+				975D8DA32A97B61600FAF8BF /* Bookshelf.swift in Sources */,
 				975D8D642A97B32700FAF8BF /* ContentView.swift in Sources */,
+				975D8D9E2A97B60C00FAF8BF /* DocumentPickerView.swift in Sources */,
+				975D8DA12A97B60C00FAF8BF /* CoverView.swift in Sources */,
 				975D8D6E2A97B32900FAF8BF /* PDF_Viewer_CoreData.xcdatamodeld in Sources */,
 				975D8D622A97B32700FAF8BF /* PDF_Viewer_CoreDataApp.swift in Sources */,
 			);
