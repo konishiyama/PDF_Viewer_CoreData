@@ -38,12 +38,13 @@ struct DocumentPickerView: UIViewControllerRepresentable {
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }
 
-            do {
-                try context.save()
-            } catch {
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
+            try? context.save()
+//            do {
+//                try context.save()
+//            } catch {
+//                let nsError = error as NSError
+//                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+//            }
         }
         
         func getDocumentsDirectory() -> URL {

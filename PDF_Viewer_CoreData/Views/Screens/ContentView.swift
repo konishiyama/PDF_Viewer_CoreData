@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  PDF_Viewer_CoreData
-//
-//  Created by KO NISHIYAMA on 2023/08/25.
-//
-
 import SwiftUI
 import CoreData
 

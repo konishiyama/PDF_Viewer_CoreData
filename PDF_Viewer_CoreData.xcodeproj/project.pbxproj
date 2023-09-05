@@ -23,6 +23,7 @@
 		975D8D9F2A97B60C00FAF8BF /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975D8D9B2A97B60C00FAF8BF /* BrowseView.swift */; };
 		975D8DA12A97B60C00FAF8BF /* CoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975D8D9D2A97B60C00FAF8BF /* CoverView.swift */; };
 		975D8DA32A97B61600FAF8BF /* Bookshelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975D8DA22A97B61600FAF8BF /* Bookshelf.swift */; };
+		976615962AA7671E00C28073 /* SwiftUIRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = 976615952AA7671E00C28073 /* SwiftUIRefresh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				976615962AA7671E00C28073 /* SwiftUIRefresh in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +204,9 @@
 			dependencies = (
 			);
 			name = PDF_Viewer_CoreData;
+			packageProductDependencies = (
+				976615952AA7671E00C28073 /* SwiftUIRefresh */,
+			);
 			productName = PDF_Viewer_CoreData;
 			productReference = 975D8D5E2A97B32700FAF8BF /* PDF_Viewer_CoreData.app */;
 			productType = "com.apple.product-type.application";
@@ -274,6 +279,9 @@
 				Base,
 			);
 			mainGroup = 975D8D552A97B32600FAF8BF;
+			packageReferences = (
+				976615942AA7671E00C28073 /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */,
+			);
 			productRefGroup = 975D8D5F2A97B32700FAF8BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -651,6 +659,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		976615942AA7671E00C28073 /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUIRefresh.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		976615952AA7671E00C28073 /* SwiftUIRefresh */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 976615942AA7671E00C28073 /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */;
+			productName = SwiftUIRefresh;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		975D8D6C2A97B32900FAF8BF /* PDF_Viewer_CoreData.xcdatamodeld */ = {
