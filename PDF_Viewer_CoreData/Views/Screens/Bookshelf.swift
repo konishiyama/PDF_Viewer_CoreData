@@ -9,7 +9,7 @@ struct Bookshelf: View {
        animation: .default
     ) var fetchedBookList: FetchedResults<Book>
     
-    @State private var isRefreshing = false
+//    @State private var isRefreshing = false
     
     @State var add = false
     @State var open = false
@@ -19,13 +19,10 @@ struct Bookshelf: View {
     @State private var showingPicker = false
 
     let pdfUrl = Bundle.main.url(forResource: "data2vec", withExtension: "pdf")!
-    @State private var fetchedLength: String?
     
     var body: some View {
         NavigationView{
             ScrollView{
-                //                fetchedLength = String(fetchedBookList.count)
-                Text(fetchedLength ?? "no books")
                 // Use LazyVGrid to create a grid with 2 columns
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
                     ForEach(fetchedBookList, id: \.self) { book in
@@ -34,10 +31,6 @@ struct Bookshelf: View {
                             .padding(15)
                     }
                 }
-
-//                ForEach(fetchedBookList, id: \.self) { book in
-//                    Text(book.title ?? "not title")
-//                }
                 .navigationBarTitle("Bookshelf", displayMode: .inline)
                 .toolbar {
                     ToolbarItem(placement: .principal) {
@@ -54,24 +47,23 @@ struct Bookshelf: View {
                 }
                 
             }
-            .refreshable
-            {
-                isRefreshing = true // Set the refresh flag
-                let fetchRequest: NSFetchRequest<Book> = Book.fetchRequest()
-               // Fetch or update your data here
-               // You can use your managedObjectContext to fetch Core Data records
-               // Example: Fetch Core Data records
-               do {
-                   let fetchedResults = try viewContext.fetch(fetchRequest)
-                   fetchedLength = String(fetchedResults.count)
-//                   fetchedBookList = fetchedResults
-               } catch {
-                   print("Error fetching Core Data: \(error)")
-               }
-
-               // After fetching or updating data, set the flag back to false
-               isRefreshing = false
-            }
+//            .refreshable
+//            {
+//                isRefreshing = true // Set the refresh flag
+//                let fetchRequest: NSFetchRequest<Book> = Book.fetchRequest()
+//               // Fetch or update your data here
+//               // You can use your managedObjectContext to fetch Core Data records
+//               // Example: Fetch Core Data records
+//               do {
+//                   let fetchedResults = try viewContext.fetch(fetchRequest)
+////                   fetchedLength = String(fetchedResults.count)
+//               } catch {
+//                   print("Error fetching Core Data: \(error)")
+//               }
+//
+//               // After fetching or updating data, set the flag back to false
+//               isRefreshing = false
+//            }
         }
         .sheet(isPresented: $add, content: {
             DocumentPickerView(viewContext: viewContext)

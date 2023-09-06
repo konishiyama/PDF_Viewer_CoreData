@@ -94,8 +94,6 @@
 		975D8D552A97B32600FAF8BF = {
 			isa = PBXGroup;
 			children = (
-				975D8D902A97B3E300FAF8BF /* Book+CoreDataClass.swift */,
-				975D8D912A97B3E300FAF8BF /* Book+CoreDataProperties.swift */,
 				975D8D602A97B32700FAF8BF /* PDF_Viewer_CoreData */,
 				975D8D762A97B32900FAF8BF /* PDF_Viewer_CoreDataTests */,
 				975D8D802A97B32A00FAF8BF /* PDF_Viewer_CoreDataUITests */,
@@ -117,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				975D8D962A97B42E00FAF8BF /* data2vec.pdf */,
+				975D8D902A97B3E300FAF8BF /* Book+CoreDataClass.swift */,
+				975D8D912A97B3E300FAF8BF /* Book+CoreDataProperties.swift */,
 				975D8D952A97B41A00FAF8BF /* Views */,
 				975D8D942A97B40E00FAF8BF /* Models */,
 				975D8D612A97B32700FAF8BF /* PDF_Viewer_CoreDataApp.swift */,

@@ -16,7 +16,6 @@ struct DocumentPickerView: UIViewControllerRepresentable {
             self.parent = parent
         }
         
-        
         func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentAt url: URL) {
             copyPDFToLocalStorage(pdfURL: url, context: self.parent.viewContext)
         }
@@ -39,12 +38,6 @@ struct DocumentPickerView: UIViewControllerRepresentable {
             }
 
             try? context.save()
-//            do {
-//                try context.save()
-//            } catch {
-//                let nsError = error as NSError
-//                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-//            }
         }
         
         func getDocumentsDirectory() -> URL {
